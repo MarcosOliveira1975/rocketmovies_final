@@ -33,7 +33,7 @@ export function Details() {
     : avatarPlaceholder;
 
   async function handleRemoveNote() {
-    const confirmation = confirm(`Deseja mesmo excluir ${note.title}`);
+    const confirmation = confirm(`Tem certeza que deseja excluir ${note.title} ?`);
     if (confirmation) {
       await api.delete(`/notes/${id}`);
       navigate(-1);
@@ -58,7 +58,7 @@ export function Details() {
           <ButtonText icon={FiArrowLeft} text="Voltar" />
         </Link>
 
-        <ButtonText text="Excluir Filme" onClick={handleRemoveNote} />
+        <ButtonText text="Excluir filme" onClick={handleRemoveNote} />
       </div>
       <main>
         <Content>
@@ -70,7 +70,7 @@ export function Details() {
             </div>
 
             <div>
-              <img src={avatarUrl} alt={`foto de perfil de ${user.name}`} />
+              <img src={avatarUrl} alt={`foto de perfil do usuário ${user.name}`} />
 
               <span>Por {user.name}</span>
 

@@ -25,7 +25,7 @@ function AuthProvider({ children }) {
         token: data.token,
       });
 
-      alert('Perfil atualizado!');
+      alert('Perfil atualizado com sucesso!');
     } catch (error) {
       if (error.response) {
         alert(error.response.data.message);
@@ -56,7 +56,7 @@ function AuthProvider({ children }) {
       if (error.response) {
         alert(error.response.data.message);
       } else {
-        alert('Não foi possível entrar!');
+        alert('Acesso não autorizado!');
       }
     }
   }

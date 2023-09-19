@@ -27,7 +27,7 @@ export function Profile() {
 
   async function handleUpdateProfile() {
     if (!name || !email) {
-      return alert('Nome e e-mail são obrigatórios!');
+      return alert('O nome e o e-mail são obrigatórios!');
     }
 
     setOldPassword('');

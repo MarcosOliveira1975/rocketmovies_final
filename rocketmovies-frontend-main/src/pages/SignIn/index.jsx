@@ -18,7 +18,7 @@ export function SignIn() {
 
   function handleSignIn() {
     if (!email || !password) {
-      return alert('Por favor, informe todos os dados!');
+      return alert('Por favor, preencha todos os campos!');
     }
     signIn({ email, password });
   }

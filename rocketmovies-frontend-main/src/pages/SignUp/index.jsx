@@ -34,7 +34,7 @@ export function SignUp() {
       if (error.response) {
         alert(error.response.data.message);
       } else {
-        alert('Não foi possível efetuar o cadastro!');
+        alert('Não foi possível efetuar o seu cadastro!');
       }
     }
   }
